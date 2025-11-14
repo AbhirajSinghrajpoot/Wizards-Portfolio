@@ -1,0 +1,307 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    background-color: rgb(18, 18, 62);
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: rgb(220, 191, 252);
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.leftSection {
+    font-size: 3rem;
+    flex: 1;
+}
+
+.rightSection img {
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #8a2be2;
+    box-shadow: 0 0 20px #8a2be2;
+}
+
+
+
+.highlight {
+    color: rgb(123, 62, 189);
+}
+
+#element {
+    color: rgb(123, 62, 189);
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: linear-gradient(90deg, #21055e9a, #26025d);
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button:hover {
+    transform: scale(1.07);
+    background: linear-gradient(90deg, #1f0248, #10035b);
+}
+
+.secondSection {
+    width: 80%;
+    margin: 60px auto;
+    padding: 10px 0;
+}
+
+.secondSection h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-left: 5px solid #8a2be2;
+    padding-left: 12px;
+}
+
+.secondSection p,
+.secondSection ul li {
+    font-size: 1.1rem;
+    color: #d4d4d4;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.secondSection ul {
+    padding-left: 20px;
+}
+
+.secondSection h3 {
+    font-size: 1.35rem;
+    margin-top: 20px;
+    color: #b48cff;
+}
+
+#contact a {
+    color: #a97bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 90%;
+    margin: 40px auto;
+    border: 0;
+    border-top: 1px solid #333;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: rgb(123, 62, 189);
+    margin: 0 5px;
+}
+
+/* RESPONSIVE DESIGN */
+
+
+/* Tablets */
+@media (max-width: 992px) {
+    .firstSection {
+        text-align: center;
+    }
+
+    .leftSection {
+        font-size: 2.4rem;
+    }
+
+    #element {
+        font-size: 1.9rem;
+    }
+
+    .secondSection {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 0;
+        height: auto;
+    }
+
+    /* 🟢 Important Fix */
+    nav div {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .leftSection {
+        font-size: 1.9rem;
+    }
+
+    #element {
+        font-size: 1.4rem;
+    }
+
+    .rightSection img {
+        height: 30vh;
+        width: 30vh;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .secondSection {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Phones */
+@media (max-width: 600px) {
+
+    nav {
+        justify-content: center;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .leftSection {
+        font-size: 1.9rem;
+    }
+
+    #element {
+        font-size: 1.4rem;
+    }
+
+    .rightSection img {
+        width: 109%;
+        margin: auto;
+        height: 347px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .secondSection {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .leftSection {
+        font-size: 1.6rem;
+    }
+
+    #element {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+}
