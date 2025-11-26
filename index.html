@@ -16,7 +16,11 @@
 <body>
     <header>
         <nav>
-            <div class="Left">Wizard's Portfolio</div>
+            <div class="Left">
+                <a href="#home" style="text-decoration:none; color:white;">
+                    Wizard's Portfolio
+                </a>
+            </div>
             <div class="hamburger" onclick="toggleMenu()">☰</div>
             <div class="Right">
                 <ul>
@@ -117,9 +121,9 @@
             </div>
             <div class="footer-second">
                 Follow me on
-                <a href="#">GitHub</a>,
-                <a href="#">LinkedIn</a>,
-                <a href="#">Twitter</a>
+                <a href="https://github.com/AbhirajSinghrajpoot">GitHub</a>,
+                <a
+                    href="https://www.linkedin.com/in/abhiraj-singh-rajpoot-7133a9349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
             </div>
             <div class="footer-third">
                 Contact:
@@ -139,6 +143,15 @@
             link.addEventListener("click", () => {
                 document.querySelector(".Right ul").classList.remove("show");
             });
+        });
+
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector("nav");
+            if (window.scrollY > 10) {
+                nav.classList.add("scrolled");
+            } else {
+                nav.classList.remove("scrolled");
+            }
         });
 
         var typed = new Typed('#element', {

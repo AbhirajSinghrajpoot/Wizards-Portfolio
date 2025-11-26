@@ -17,9 +17,10 @@ body {
 
 .Left {
     font-size: 1.5rem;
-    font-weight: 700; 
+    font-weight: 700;
     text-shadow: 0 0 12px #d4b5f3;
 }
+
 
 
 /* NAVBAR */
@@ -29,8 +30,17 @@ nav {
     align-items: center;
     height: 70px;
     padding: 0 20px;
-    background-color: rgb(18, 18, 62);
-    flex-wrap: wrap;
+    background-color: rgba(18, 18, 62, 0.85);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+nav.scrolled {    background-color: rgba(7, 7, 91, 0.196);
 }
 
 nav ul {
@@ -173,9 +183,10 @@ footer a {
 
 .hamburger {
     display: none;
-    font-size: 28px;
+    font-size: 32px;
     cursor: pointer;
     color: white;
+    margin-left: auto;
 }
 
 /* RESPONSIVE DESIGN */
@@ -208,7 +219,12 @@ footer a {
         justify-content: space-between;
         align-items: center;
         padding: 12px 10px;
-        position: relative;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgba(18, 18, 62, 0.85);
+        backdrop-filter: blur(8px);
+        transition: 0.3s ease;
     }
 
     .Left {
@@ -220,8 +236,10 @@ footer a {
         font-size: 32px;
         cursor: pointer;
         color: white;
-        margin-left: auto; /* Push to right */
+        margin-left: auto;
+        /* Push to right */
     }
+
     .Right ul {
         flex-direction: column;
         position: absolute;
@@ -255,5 +273,20 @@ footer a {
 
     nav ul li a {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .rightSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightSection img {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+        display: block;
     }
 }
