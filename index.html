@@ -26,6 +26,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
         </nav>
 
     </header>
@@ -69,7 +70,7 @@
         </section>
 
         <hr>
-        
+
         <!-- SKILLS SECTION -->
         <section id="skills" class="secondSection">
             <h1>Skills & Interests</h1>
@@ -102,7 +103,9 @@
         <section id="contact" class="secondSection">
             <h1>Contact Information</h1>
             <p>Email: <a href="mailto:abhirajsingh2k5@gmail.com">Email me</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/abhiraj-singh-rajpoot-7133a9349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></p>
+            <p>LinkedIn: <a
+                    href="https://www.linkedin.com/in/abhiraj-singh-rajpoot-7133a9349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank">LinkedIn Profile</a></p>
             <p>GitHub: <a href="https://github.com/AbhirajSinghrajpoot" target="_blank">GitHub Profile</a></p>
         </section>
     </main>
@@ -129,6 +132,10 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+        }
+
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'Ethical Hacker', 'Tech Enthusiast'],
             loop: true,
