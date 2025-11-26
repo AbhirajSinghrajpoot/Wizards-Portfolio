@@ -14,6 +14,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+.Left {
+    font-size: 1.5rem;
+    font-weight: 700; 
+    text-shadow: 0 0 12px #d4b5f3;
+}
+
+
 /* NAVBAR */
 nav {
     display: flex;
@@ -165,7 +173,7 @@ footer a {
 
 .hamburger {
     display: none;
-    font-size: 30px;
+    font-size: 28px;
     cursor: pointer;
     color: white;
 }
@@ -192,139 +200,46 @@ footer a {
     }
 }
 
-@media (max-width: 600px) {
-
-    nav {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 15px 0;
-        height: auto;
-    }
-
-    /* Important Fix */
-    nav div {
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 12px;
-        margin-top: 10px;
-        width: 100%;
-        align-items: center;
-    }
-
-    .leftSection {
-        font-size: 1.9rem;
-    }
-
-    #element {
-        font-size: 1.4rem;
-    }
-
-    .rightSection img {
-        height: 30vh;
-        width: 30vh;
-    }
-
-
-    button {
-        width: 100%;
-    }
-
-    .buttons {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .secondSection {
-        width: 90%;
-        margin: 40px auto;
-    }
-
-    .secondSection h1 {
-        font-size: 1.5rem;
-    }
-}
-
-/* Mobile Navbar Style */
+/* MOBILE NAVBAR + PHONE VIEW */
 @media (max-width: 768px) {
 
-    .Right ul {
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        background-color: rgb(18, 18, 62);
-        width: 180px;
-        flex-direction: column;
-        padding: 15px;
-        border-radius: 10px;
-        display: none;
-        gap: 15px;
-        text-align: center;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 10px;
+        position: relative;
     }
 
-    .Right ul.show {
-        display: flex;
+    .Left {
+        flex: 1;
     }
 
     .hamburger {
         display: block;
+        font-size: 32px;
+        cursor: pointer;
+        color: white;
+        margin-left: auto; /* Push to right */
     }
-
-    nav {
-        justify-content: space-between;
-        padding: 12px 20px;
-    }
-}
-
-
-/* Phones */
-@media (max-width: 600px) {
-
-    nav {
-        justify-content: center;
-        text-align: center;
-        padding: 15px 0;
-    }
-
-    nav ul {
+    .Right ul {
         flex-direction: column;
-        gap: 12px;
-        margin-top: 10px;
+        position: absolute;
+        background: rgb(18, 18, 62);
+        top: 64px;
+        right: 7px;
+        width: 64px;
+        gap: 14px;
+        padding: 23px 26px;
+        border-radius: 27px;
+        display: none;
+        text-align: right;
+        align-items: flex-end;
+        z-index: 999;
     }
 
-    .leftSection {
-        font-size: 1.9rem;
-    }
-
-    #element {
-        font-size: 1.4rem;
-    }
-
-    .rightSection img {
-        width: 109%;
-        margin: auto;
-        height: 347px;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    .buttons {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .secondSection {
-        width: 90%;
-        margin: 40px auto;
-    }
-
-    .secondSection h1 {
-        font-size: 1.5rem;
+    .Right ul.show {
+        display: flex;
     }
 }
 

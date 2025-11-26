@@ -17,6 +17,7 @@
     <header>
         <nav>
             <div class="Left">Wizard's Portfolio</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <div class="Right">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -26,7 +27,6 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
         </nav>
 
     </header>
@@ -133,8 +133,13 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         function toggleMenu() {
-            document.getElementById("navLinks").classList.toggle("show");
+            document.querySelector(".Right ul").classList.toggle("show");
         }
+        document.querySelectorAll(".Right ul li a").forEach(link => {
+            link.addEventListener("click", () => {
+                document.querySelector(".Right ul").classList.remove("show");
+            });
+        });
 
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'Ethical Hacker', 'Tech Enthusiast'],
