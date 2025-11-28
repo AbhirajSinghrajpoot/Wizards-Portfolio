@@ -191,7 +191,18 @@ footer a {
 
 /* RESPONSIVE DESIGN */
 
-
+/* iPhone 14 Pro Max */
+@media (max-width: 431px) and (min-width: 390px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px; 
+        width: 100%;
+        text-align: center;
+        margin: 10px 4px;
+    }
+}
 /* Tablets */
 @media (max-width: 992px) {
     .firstSection {
