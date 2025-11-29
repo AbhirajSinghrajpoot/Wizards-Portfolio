@@ -40,7 +40,8 @@ nav {
 
 }
 
-nav.scrolled {    background-color: rgba(7, 7, 91, 0.196);
+nav.scrolled {
+    background-color: rgba(7, 7, 91, 0.196);
 }
 
 nav ul {
@@ -197,12 +198,13 @@ footer a {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 12px; 
+        gap: 12px;
         width: 100%;
         text-align: center;
         margin: 10px 4px;
     }
 }
+
 /* Tablets */
 @media (max-width: 992px) {
     .firstSection {
@@ -274,6 +276,16 @@ footer a {
 
 /* Very small phones */
 @media (max-width: 360px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 4px;
+    }
+
     .leftSection {
         font-size: 1.6rem;
     }
@@ -299,5 +311,17 @@ footer a {
         height: 220px;
         margin: 0 auto;
         display: block;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 440px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 4px;
     }
 }
