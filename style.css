@@ -343,7 +343,7 @@ footer a {
 
 
 
-@media (max-width: 400px) and (min-width: 360px) {
+@media (max-width: 432px) {
     .buttons {
         display: flex;
         justify-content: center;
@@ -351,6 +351,6 @@ footer a {
         gap: 12px;
         width: 100%;
         text-align: center;
-        margin: 10px 4px;
+        margin: 13px 4px;
     }
 }
