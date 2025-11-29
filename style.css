@@ -325,3 +325,32 @@ footer a {
         margin: 10px 4px;
     }
 }
+
+@media (min-width: 400px) and (max-width: 420px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .firstSection {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+
+
+@media (max-width: 400px) and (min-width: 360px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 4px;
+    }
+}
