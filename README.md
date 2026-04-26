@@ -4,7 +4,7 @@ A modern, responsive developer portfolio website showcasing skills, projects, an
 
 ## 🌐 Live Demo
 
-Visit the live website: [https://abhirajsinghrajpoot.github.io/Wizards-Portfolio/](https://abhirajsinghrajpoot.github.io/Wizards-Portfolio/)
+Visit the live website: [https://wizards-portfolio.vercel.app/](https://wizards-portfolio.vercel.app/)
 
 ## 📋 Features
 
