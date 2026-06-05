@@ -21,6 +21,11 @@ body {
     text-shadow: 0 0 12px #d4b5f3;
 }
 
+.Left a {
+    text-decoration: none;
+    color: white;
+}
+
 
 
 /* NAVBAR */
@@ -31,8 +36,10 @@ nav {
     height: 70px;
     padding: 0 20px;
     background-color: rgba(18, 18, 62, 0.85);
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     position: fixed;
+    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     transition: 0.3s ease;
     width: 100%;
@@ -236,6 +243,7 @@ footer a {
         width: 100%;
         box-sizing: border-box;
         background-color: rgba(18, 18, 62, 0.85);
+        -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
         transition: 0.3s ease;
     }
@@ -257,6 +265,8 @@ footer a {
         flex-direction: column;
         position: absolute;
         background: rgba(2, 2, 52, 0.385);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
         top: 64px;
         right: 7px;
         width: 64px;
