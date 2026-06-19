@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 
@@ -127,6 +128,10 @@ button {
 button:hover {
     transform: scale(1.07);
     background: linear-gradient(90deg, #1f0248, #10035b);
+}
+
+section {
+    scroll-margin-top: 90px;
 }
 
 .secondSection {
@@ -284,6 +289,7 @@ footer {
     color: white;
     margin-left: auto;
 }
+
 /* CARDS (Skills & Projects) */
 .card-grid {
     display: grid;
@@ -381,9 +387,11 @@ footer {
     .secondSection {
         width: 95%;
     }
+
     .secondSection .card {
         padding: 18px;
     }
+
     .card-grid {
         gap: 15px;
     }
