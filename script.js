@@ -23,7 +23,7 @@ var typed = new Typed('#element', {
     typeSpeed: 50,
 });
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbzZcICAf6sQFROAX4L1ZZGaIhBa7nuzZvbNDnc3P8hKnjxvCFCBjoGsl9fW7NfTuJAm/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbwJWDawXjp1g1ekxc1haYnTs8UMop5l7QqrDItp7c5rjX8SU7FySw7gYznskDcmaW8y/exec";
 
 document.getElementById("contactForm").addEventListener("submit", async (e) => {
     e.preventDefault();
